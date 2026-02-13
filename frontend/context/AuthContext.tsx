@@ -27,7 +27,7 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
   useEffect(() => {
 
     // A simple "ping" to wake up Render
-    fetch('https://your-backend.onrender.com/api/v1/ping')
+    fetch(`${process.env.NEXT_PUBLIC_API_URL}/ping`)
       .catch(() => console.log("Waking up server..."));
 
     const storedToken = localStorage.getItem('token');
