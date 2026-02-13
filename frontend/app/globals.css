@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* In v4, you define the dark mode strategy directly in CSS */
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+  background-color: #ffffff;
+  color: #0f172a;
+}
+
+.dark {
+  background-color: #020617;
+  color: #f8fafc;
+}
+
+body {
+  transition-property: color, background-color;
+  transition-duration: 300ms;
+}
