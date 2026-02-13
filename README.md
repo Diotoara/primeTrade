@@ -2,6 +2,8 @@
 
 A professional-grade, full-stack **Asset Portfolio Manager** built with the **MERN** stack (MongoDB, Express, React, Node.js) and **Next.js 15**. This application features secure JWT-based authentication, Role-Based Access Control (RBAC), and a theme-adaptive UI.
 
+## Note: The backend is hosted on Render's free tier. If the app hasn't been used recently, the first request may take 30–60 seconds to process while the server instances spin up.
+
 ---
 
 ## 🚀 Getting Started

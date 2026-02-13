@@ -25,6 +25,11 @@ export const AuthProvider = ({ children }: { children: React.ReactNode }) => {
 
   // On mount, check if user is already logged in
   useEffect(() => {
+
+    // A simple "ping" to wake up Render
+    fetch('https://your-backend.onrender.com/api/v1/ping')
+      .catch(() => console.log("Waking up server..."));
+
     const storedToken = localStorage.getItem('token');
     const storedUser = localStorage.getItem('user');
 
